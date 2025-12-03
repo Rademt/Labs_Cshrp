@@ -29,7 +29,7 @@ namespace Restaurant
 
         public void DisplayMenu()
         {
-            Console.WriteLine("\n--- 📜 МЕНЮ РЕСТОРАНУ ---");
+            Console.WriteLine("\n--- МЕНЮ РЕСТОРАНУ ---");
             for (int i = 0; i < menu.Count; i++)
             {
                 Console.WriteLine($"{i + 1}. {menu[i].ToString()} | Деталі: {menu[i].GetDetails()}");
@@ -66,11 +66,11 @@ namespace Restaurant
             }
             else if (order == null)
             {
-                Console.WriteLine($"⚠️ Замовлення з ID {orderId} не знайдено.");
+                Console.WriteLine($" Замовлення з ID {orderId} не знайдено.");
             }
             else // item == null
             {
-                Console.WriteLine($"⚠️ Позиція '{itemName}' не знайдена в меню.");
+                Console.WriteLine($" Позиція '{itemName}' не знайдена в меню.");
             }
         }
 
@@ -83,7 +83,7 @@ namespace Restaurant
             }
             else
             {
-                Console.WriteLine($"⚠️ Замовлення з ID {orderId} не знайдено.");
+                Console.WriteLine($" Замовлення з ID {orderId} не знайдено.");
             }
         }
 
@@ -94,7 +94,7 @@ namespace Restaurant
 
         public void DisplayAllActiveOrders()
         {
-            Console.WriteLine("\n--- 📋 УСІ АКТИВНІ ЗАМОВЛЕННЯ ---");
+            Console.WriteLine("\n---  УСІ АКТИВНІ ЗАМОВЛЕННЯ ---");
             if (!activeOrders.Any())
             {
                 Console.WriteLine("Наразі немає активних замовлень.");
