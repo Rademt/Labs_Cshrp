@@ -6,13 +6,13 @@ namespace Restaurant
 {
     class Dish : MenuItem
     {
-        public string DishCategory { get; private set; } // Наприклад, Перше, Друге, Салат
+        public string DishCategory { get; private set; }
 
         public Dish(string name, decimal price, string dishCategory)
             : base(name, price)
         {
             DishCategory = dishCategory;
-            Category = "Страва"; // Встановлення базової категорії
+            Category = "Страва";
         }
 
         public override string GetDetails()
