@@ -57,7 +57,7 @@ namespace Restaurant
             }
             else
             {
-                Console.WriteLine($"⚠️ Невдала спроба змінити статус замовлення №{OrderId} з {Status} на {newStatus}. Перехід назад не дозволено.");
+                Console.WriteLine($"Невдала спроба змінити статус замовлення №{OrderId} з {Status} на {newStatus}. Перехід назад не дозволено.");
             }
         }
 
